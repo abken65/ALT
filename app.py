@@ -120,4 +120,4 @@ days_needed = [( (mtbf_result * chi_square_val) / (2 * st.session_state.n_input 
  
 fig = go.Figure(go.Scatter(x=temp_range, y=days_needed, mode='lines', line=dict(color='#007BFF', width=3), fill='tozeroy'))
 fig.update_layout(xaxis_title="測試溫度 (°C)", yaxis_title="測試時間 (天)", template="plotly_white")
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig, width="stretch")
